@@ -76,6 +76,7 @@ All of PayPal's [HTML button variables](https://developer.paypal.com/webapps/dev
 * `data-locale` The desired locale of the PayPal site.
 * `data-callback` The IPN notify URL to be called on completion of the transaction.
 * `data-env` The PayPal environment to checkout in, e.g. `sandbox` (defaults to 'www')
+* `data-return` The URI towards which the browser is redirected after the payment.
 
 
 ## Editable fields
