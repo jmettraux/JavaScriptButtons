@@ -76,7 +76,9 @@ All of PayPal's [HTML button variables](https://developer.paypal.com/webapps/dev
 * `data-locale` The desired locale of the PayPal site.
 * `data-callback` The IPN notify URL to be called on completion of the transaction.
 * `data-env` The PayPal environment to checkout in, e.g. `sandbox` (defaults to 'www')
-* `data-return` The URI towards which the browser is redirected after the payment.
+* `data-return` The URL towards which the browser is redirected after the payment.
+* `data-rm` Only used when `data-return` is set. May take one of three values: `2` tells the payer's browser will get redirected to the `data-return` URI via a POST, all the transaction variables are posted. `1` sets the redirection to occur via a GET (no variables passed). `0` (the default) tells that all the transactions should happen over GET.
+* `data-cancel-return` Where (URL) to redirect the browser if the payment gets cancelled
 
 
 ## Editable fields
